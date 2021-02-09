@@ -1,0 +1,73 @@
+$black-color: #000000;
+$white-color: #F6FEF4;
+
+h1{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 1.3em;
+    color: $black-color;
+}
+
+.card-img-top{
+    width: 43.5vh;
+    height: 58vh;
+    padding-left: 2vh;
+}
+.card-text{
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.about{
+    padding-left: 4vh;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 0.2rem;
+    text-align: center;
+}
+h4{
+    text-align: center;
+    font-size: 1.1rem;
+    padding-bottom: 0.6rem;
+}
+
+.description{
+    font-size: 0.83rem;
+    text-justify: distribute;
+}
+
+.padding{
+    padding-right: 7vh;
+}
+
+.div-quote{
+    padding-top: 15vh;
+}
+
+.quote{
+    font-size: 1.1rem;
+}
+
+.list{
+    padding-top: 5vh;
+}
+
+li{
+    font-size: 0.8rem;
+}
+
+.progress-bar{
+    color: $white-color;
+    font-weight: bold;
+    font-size: 0.65rem;
+}
+
+hr{
+    margin-top: 15vh;
+    color: gray;
+    width: 90%;
+}
