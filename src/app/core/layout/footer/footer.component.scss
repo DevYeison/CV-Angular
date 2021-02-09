@@ -1,0 +1,71 @@
+$black-color:  #000000;
+$white-color: #F6FEF4;
+$yellow-color: #FFC107;
+
+footer{
+    background-color: $black-color;
+    color: $white-color;
+    width: 100%;
+    margin: 0;
+}
+
+.media{
+    color: $white-color;
+    font-size: 1.1em;
+    padding-top: 0.8em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
+.media:hover{
+    color: $yellow-color;
+}
+
+#sign{
+    padding-top: 1rem;
+    font-size: 0.65em;
+    color: $white-color;
+}
+#sign:hover{
+    color: $yellow-color;
+    text-decoration: none;
+}
+
+#title{
+    padding-top: 1.2em;
+    text-align: center;
+}
+
+h6{
+    font-size: 0.9em;
+}
+
+#conditions{
+    padding-top: 1em;
+}
+
+a{
+    color: $white-color;
+    text-decoration: none;
+}
+a:hover{
+    color: $yellow-color;
+}
+
+#indice{
+    padding-top: 1em;
+}
+
+h5{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+h3{
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.padding{
+    padding-bottom: 0.8rem;
+}
