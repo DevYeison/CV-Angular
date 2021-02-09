@@ -1,0 +1,25 @@
+$black-color: #000000;
+$white-color: #F6FEF4;
+$yellow-color: #FFC107;
+
+nav{
+    background-color: $black-color;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    color: $white-color;
+}
+
+span{
+    padding-left: 0.5rem;
+}
+
+.dev{
+    color: $yellow-color;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 1rem;
+}
+
+.dev:hover{
+    color: $white-color;
+}
