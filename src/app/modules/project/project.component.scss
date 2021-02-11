@@ -25,18 +25,38 @@ h6{
     text-align: center;
 }
 
-.card-columns{
-    padding: 10vh 0 10vh 5vh;
-    padding-left: 5vh;
+.card{
+    width: 400px;
+    &:active{
+        position: relative;
+        left: 90%;
+        top: 50%;
+        transform: translate(-70%,-70%);
+        width: 700px;
+        z-index: 2;
+    }
+}
+
+.col-4{
+    padding-top: 8vh;
+}
+
+#container{
+    padding-left:1rem;
 }
 
 #button{
    width: 100%;
    text-align: center;
    padding-bottom: 10vh;
+   padding-top: 10vh;
 }
 a{
     width: 30vh;
     display: inline-block;
     text-align: center;
+}
+
+#projects{
+    overflow-x: hidden;
 }

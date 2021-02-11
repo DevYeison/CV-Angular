@@ -1,20 +1,25 @@
-<h1>{{project.name | uppercase}} 
-    <small>({{project.createdAt | date: "y"}})</small>
-</h1>
-<hr/>
-
-<h6>{{project.description}}</h6>
-
-<div class="card-columns">
-    <div class="card" style="width: 25rem;" *ngFor="let img of project.images;">
-        <img [src]="img" class="card-img-top" alt="app development image">
-      </div>
+<div id="projects">
+    <h1>{{project.name | uppercase}} 
+        <small>({{project.createdAt | date: "y"}})</small>
+    </h1>
+    <hr/>
+    
+    <h6>{{project.description}}</h6>
+    
+    <div id="container" class="row">
+        <div class="col-4" *ngFor="let img of project.images;">
+            <div class="card">
+                <img [src]="img" class="card-img-top" alt="app development image">
+             </div>
+        </div>
+       
+    </div>
+    
+    <div id="button">
+        <a [routerLink]="['/project']" class="btn" class="btn btn-outline-warning btn-block">
+            Go Back
+        </a>
+    </div>
+    
+    <project-footer></project-footer>
 </div>
-
-<div id="button">
-    <a [routerLink]="['/project']" class="btn" class="btn btn-outline-warning btn-block">
-        Go Back
-    </a>
-</div>
-
-<project-footer></project-footer>
