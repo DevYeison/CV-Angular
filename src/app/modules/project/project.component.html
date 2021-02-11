@@ -3,17 +3,18 @@
 </h1>
 <hr/>
 
-<div class="row">
-    <div class="col-md-4">
-        <img [src]="project.images[0]" [alt]="project.name" class="image-fluid">
-        <br>
-        <a [routerLink]="['/project']" class="btn" class="btn btn-outline-warning btn-block">
+<h6>{{project.description}}</h6>
+
+<div class="card-columns">
+    <div class="card" style="width: 25rem;" *ngFor="let img of project.images;">
+        <img [src]="img" class="card-img-top" alt="app development image">
+      </div>
+</div>
+
+<div id="button">
+    <a [routerLink]="['/project']" class="btn" class="btn btn-outline-warning btn-block">
         Go Back
     </a>
-    </div>
-    <div class="col-md-8">
-        <h3>{{project.name}}</h3>
-        <hr/>
-        <p>{{project.description}}</p>
-    </div>
 </div>
+
+<project-footer></project-footer>
