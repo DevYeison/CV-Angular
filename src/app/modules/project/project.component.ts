@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ProjectService } from 'src/app/core/http/project.service';
-import { Project } from 'src/app/core/models/project.model';
+import { Project } from 'src/app/models/project.model';
+import { ProjectService } from '../home/http/project.service';
 
 @Component({
   selector: 'app-project',
@@ -17,7 +17,7 @@ export class ProjectComponent implements OnInit {
       name: "loading...",
       description: "loading...",
       finishDate: new Date,
-      images: ['https://www.clipartmax.com/png/middle/200-2006541_circles-loader-vector-loading-circle-transparent-png.png'],
+      images: ['https://zonegis.es/wp-content/uploads/2020/05/Loading.jpg'],
       createdAt: new Date,
       updatedAt: new Date
     }
