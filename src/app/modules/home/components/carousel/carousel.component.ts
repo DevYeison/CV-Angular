@@ -13,9 +13,9 @@ export class CarouselComponent implements OnInit {
   constructor() {
     this.actualImg = 0;
     this.arrayImgs = [
-      `${this.initialRoute}ia.png`,
-      `${this.initialRoute}zorro.png`,
-      `${this.initialRoute}toxic.png`
+      `${this.initialRoute}fullstack.png`,
+      `${this.initialRoute}MEAN.png`,
+      `${this.initialRoute}mobile.png`
     ];
   }
 
@@ -25,17 +25,17 @@ export class CarouselComponent implements OnInit {
   prevImg(): void{
     if(this.actualImg != 0) {
       this.actualImg --;
-    }else if(this.actualImg == 0){
-      this.actualImg = this.arrayImgs.length;
-    };
+    }else{
+      this.actualImg = this.arrayImgs.length -1;
+    }
   }
 
   nextImg():void{
-    if(this.actualImg != 2) {
-      this.actualImg ++
-    }else if(this.actualImg == 2){
+    if(this.actualImg != this.arrayImgs.length - 1) {
+      this.actualImg ++;
+    }else{
       this.actualImg = 0;
-    };
+    }
   }
 
   img(): string{

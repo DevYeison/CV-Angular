@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ProjectService } from 'src/app/core/http/project.service';
-import { Project } from 'src/app/core/models/project.model';
+import { Project } from 'src/app/models/project.model';
+import { ProjectService } from '../../http/project.service';
 
 @Component({
-  selector: 'projects',
+  selector: 'home-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })

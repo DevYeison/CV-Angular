@@ -4,8 +4,8 @@ $yellow-color: #FFC107;
 
 nav{
     background-color: $black-color;
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
     color: $white-color;
 }
 
@@ -15,11 +15,16 @@ span{
 
 .dev{
     color: $yellow-color;
-    font-weight: bold;
+    font-weight: bolder;
     letter-spacing: 4px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    &:hover{
+        color: $white-color;
+    }
 }
 
-.dev:hover{
-    color: $white-color;
+.btn{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.2rem 0.6rem 0.3rem 0.6rem;
 }

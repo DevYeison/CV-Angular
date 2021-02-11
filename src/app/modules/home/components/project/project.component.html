@@ -3,11 +3,14 @@
     <div class="card-body">
         <h4 class="card-title">{{project.name}}</h4>
         <p class="card-text">{{project.description}}</p>
-        <p class="card-text">
+        <p id="date" class="card-text">
             <small class="text-muted">{{project.finishDate | date:"MM/dd/yy"}}</small>
         </p>
-        <a 
+        <div id="button">
+            <a 
         [routerLink]="['/project', project._id]"
         class="btn btn-outline-warning btn-sm">See more...</a>
+        </div>
+        
     </div>
 </div>
