@@ -6,16 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent implements OnInit {
-  private initialRoute: string = "assets/imgs/";
   private actualImg: number;
   private arrayImgs: string[];
 
   constructor() {
     this.actualImg = 0;
     this.arrayImgs = [
-      `${this.initialRoute}fullstack.png`,
-      `${this.initialRoute}MEAN.png`,
-      `${this.initialRoute}mobile.png`
+      `https://i.ibb.co/Rh49bFs/fullstack.png`,
+      `https://i.ibb.co/pZk44Bv/MEAN.png`,
+      `https://i.ibb.co/rGs9xHd/mobile.png`
     ];
   }
 
