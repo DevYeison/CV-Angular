@@ -107,3 +107,29 @@ hr{
         padding: 2.5rem 0.2rem 0rem 0.3rem;
     }
 }
+
+@media screen and (min-width: 320px) and (max-width:375px) {
+
+    #about{
+        font-size: 1.55rem;
+    }
+
+    #image{
+        padding-right: 6vh;
+    }
+
+    h3{
+        padding-top: 8vh;
+    }
+
+    .description{
+        padding: 0 1.5vh 0 1.5vh;
+    }
+
+    h1{
+        padding-bottom: 0rem;
+    }
+    h4{
+        padding: 3rem 0 0 0;
+    }
+}
