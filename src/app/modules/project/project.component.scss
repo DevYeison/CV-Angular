@@ -52,6 +52,14 @@ a{
     overflow-x: hidden;
 }
 
+.alert{
+    text-align: center;
+}
+
+#alert{
+    padding: 1.5rem 2rem 0 2rem;
+}
+
 @media only screen and (max-device-width: 320px){
 
     h6{

@@ -4,7 +4,8 @@ import {
   faInstagram, 
   faGoogle, 
   faYoutube,
-  IconDefinition} from '@fortawesome/free-brands-svg-icons'
+  IconDefinition,
+  faGithub} from '@fortawesome/free-brands-svg-icons';
 @Component({
   selector: 'project-footer',
   templateUrl: './footer.component.html',
@@ -15,6 +16,7 @@ export class FooterComponent implements OnInit {
   faInstagram: IconDefinition = faInstagram;
   faGoogle: IconDefinition = faGoogle;
   faYoutube: IconDefinition = faYoutube;
+  faGithub: IconDefinition = faGithub;
 
   constructor() { }
 

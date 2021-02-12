@@ -4,7 +4,8 @@ import {
   faFacebookF, 
   faInstagram, 
   faGoogle, 
-  faYoutube} from '@fortawesome/free-brands-svg-icons'
+  faYoutube,
+  faGithub} from '@fortawesome/free-brands-svg-icons'
 
 @Component({
   selector: 'footer-core',
@@ -16,6 +17,7 @@ export class FooterComponent implements OnInit {
   faInstagram: IconDefinition = faInstagram;
   faGoogle: IconDefinition = faGoogle;
   faYoutube: IconDefinition = faYoutube;
+  faGithub: IconDefinition = faGithub;
   constructor() { }
 
   ngOnInit(): void {

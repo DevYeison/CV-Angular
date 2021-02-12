@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Project } from 'src/app/models/project.model';
 import { ProjectService } from '../home/http/project.service';
@@ -11,6 +11,10 @@ import { ProjectService } from '../home/http/project.service';
 export class ProjectComponent implements OnInit {
 
   public project: Project;
+  public loading: boolean = false;
+  public error: string = "";
+  @ViewChild('alert') private alertElement: ElementRef;
+
   constructor(private _activatedRoute: ActivatedRoute, private _projectService: ProjectService) {
     this.project = {
       _id: "loading...",
@@ -26,10 +30,21 @@ export class ProjectComponent implements OnInit {
   ngOnInit(): void {
     this._activatedRoute.params.subscribe(params =>{
       const id: string = params['id'];
-      this._projectService.getProject(id).subscribe((project: Project)=>{
+      this._projectService.getProject(id)
+      .subscribe(
+        (project: Project)=>{
+        this.loading = true;
         this.project = project;
-      });
+      },
+      (error) =>{
+        this.loading = false;
+        this.error = error.message;
+      }
+      );
     });
   }
 
+  closeAlert(){
+    this.alertElement.nativeElement.classList.remove("show");
+  }
 }
