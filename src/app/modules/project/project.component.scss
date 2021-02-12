@@ -25,26 +25,17 @@ h6{
     text-align: center;
 }
 
-.card{
-    width: 400px;
-    &:active{
-        position: relative;
-        left: 90%;
-        top: 50%;
-        transform: translate(-70%,-70%);
-        width: 700px;
-        z-index: 2;
-    }
+.col-sm-4{
+    padding: 5vh 5vh 5vh 5vh;
 }
-
-.col-4{
-    padding-top: 8vh;
+.card:active{
+    position: relative;
+    left: 90%;
+    top: 50%;
+    transform: translate(-68%,-70%);
+    width: 500px;
+    z-index: 2;
 }
-
-#container{
-    padding-left:1rem;
-}
-
 #button{
    width: 100%;
    text-align: center;
@@ -59,4 +50,16 @@ a{
 
 #projects{
     overflow-x: hidden;
+}
+
+@media only screen and (max-device-width: 320px){
+
+    h6{
+        font-size: 1.15rem;
+        padding: 0 5vh 0 5vh;
+    }
+
+    .card:active{
+        width: 450px;
+    }
 }

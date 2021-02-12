@@ -6,13 +6,12 @@
     
     <h6>{{project.description}}</h6>
     
-    <div id="container" class="row">
-        <div class="col-4" *ngFor="let img of project.images;">
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let img of project.images;">
             <div class="card">
-                <img [src]="img" class="card-img-top" alt="app development image">
+                <img [src]="img"  alt="app development image">
              </div>
         </div>
-       
     </div>
     
     <div id="button">

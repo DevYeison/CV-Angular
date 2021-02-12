@@ -10,8 +10,6 @@ h1{
 }
 
 .card-img-top{
-    width: 43.5vh;
-    height: 58vh;
     padding-left: 2vh;
 }
 .card-text{
@@ -75,4 +73,37 @@ hr{
     margin-top: 15vh;
     color: gray;
     width: 90%;
+}
+
+
+@media only screen and (max-device-width: 320px ){
+ 
+    #about{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .col-sm-3{
+        padding-left: 0.6rem;
+        padding-right: 6vh;
+        padding-bottom: 5vh;
+    }
+
+    .div-quote{
+        padding-top: 5vh;
+    }
+
+    hr{
+        margin-top: 10vh;
+        color: gray;
+        width: 70%;
+    }
+    
+    h1{
+        padding-bottom: 0.5rem;
+    }
+
+    h4{
+        padding: 2.5rem 0.2rem 0rem 0.3rem;
+    }
 }

@@ -60,3 +60,20 @@ h5{
 .paddings{
     padding: 0 20vh 0 20vh; 
 }
+
+
+@media only screen and (max-device-width: 320px){
+    .col-sm-6{
+        padding: 0ch;
+        text-align: center;
+    }
+
+    #icons{
+        display: inline-flex;
+    }
+
+    .media{
+        padding-right: 2vh;
+        padding-bottom: 5vh;
+    }
+}

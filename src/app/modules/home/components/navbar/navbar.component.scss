@@ -33,3 +33,19 @@ img{
     width: 32px; 
     height: 32px;
 }
+
+@media only screen and (max-device-width: 320px ){
+    
+    nav{
+        padding: 0;
+    }
+    
+    img{
+        height: 34px;
+    }
+
+    span{
+        font-size: 1.3rem;
+        padding-left: 0.6rem;
+    }
+}
