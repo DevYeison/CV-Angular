@@ -1,7 +1,7 @@
 <div id="alert">
     <div #alert *ngIf="!loading" class="alert alert-warning alert-dismissible fade show" role="alert">
         Loading... {{error}} 
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="closeAlert()"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" (click)="closeAlert()" aria-label="close alert"></button>
       </div>
 </div>
 
