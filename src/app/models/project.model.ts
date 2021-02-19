@@ -3,7 +3,6 @@ export interface Project {
     name: string;
     description:string;
     finishDate: Date;
-    images: string[]
-    createdAt: Date;
-    updatedAt: Date;
+    imgs: string[];
+    technologies: string[];
 }

@@ -7,13 +7,18 @@ import { environment } from 'src/environments/environment';
 })
 export class ProjectService {
   private baseUrl: string = environment.BASE_API_URL;
-  constructor(private readonly _http: HttpClient) { }
 
-  public getProjects(){
-    return this._http.get<Project>(this.baseUrl + "/project");
+  constructor(
+    private readonly _http: HttpClient
+    ) { }
+
+  public getProject(projectId: string, resolution: number){
+    return this._http.get<Project>(this.baseUrl + "/project/unique/"+ projectId + "/" + resolution);
+  } 
+
+  public getProjects(resolution: number){
+    return this._http.get<Project>(this.baseUrl + "/project/img/" + resolution);
   }
 
-   public getProject(projectId: string){
-    return this._http.get<Project>(this.baseUrl + "/project/"+ projectId);
-  } 
+  
 }

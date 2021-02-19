@@ -10,27 +10,42 @@ import { ProjectService } from '../home/http/project.service';
 })
 export class ProjectComponent implements OnInit {
 
+  private deviceWidth: number = document.documentElement.clientWidth;
   public project: Project;
   public loading: boolean = false;
   public error: string = "";
   @ViewChild('alert') private alertElement: ElementRef;
 
   constructor(private _activatedRoute: ActivatedRoute, private _projectService: ProjectService) {
+    if(this.deviceWidth <= 320 ){
+      this.deviceWidth = 320;
+    }else if(this.deviceWidth >320 && this.deviceWidth <= 375){
+      this.deviceWidth = 375;
+    }else if(this.deviceWidth >375 && this.deviceWidth <= 425){
+      this.deviceWidth = 425;
+    }else if(this.deviceWidth >425 && this.deviceWidth <= 768){
+      this.deviceWidth = 768;
+    }else if(this.deviceWidth >768 && this.deviceWidth <= 1024){
+      this.deviceWidth = 1024;
+    }else if(this.deviceWidth >1024 && this.deviceWidth <= 1440){
+      this.deviceWidth = 1440;
+    }else if(this.deviceWidth >1440 && this.deviceWidth <= 2560){
+      this.deviceWidth = 2560;
+    }
     this.project = {
       _id: "loading...",
       name: "loading...",
       description: "loading...",
       finishDate: new Date,
-      images: ['https://zonegis.es/wp-content/uploads/2020/05/Loading.jpg'],
-      createdAt: new Date,
-      updatedAt: new Date
+      technologies: ["loading..."],
+      imgs: ['https://zonegis.es/wp-content/uploads/2020/05/Loading.jpg']
     }
   }
 
   ngOnInit(): void {
     this._activatedRoute.params.subscribe(params =>{
       const id: string = params['id'];
-      this._projectService.getProject(id)
+      this._projectService.getProject(id, this.deviceWidth)
       .subscribe(
         (project: Project)=>{
         this.loading = true;
