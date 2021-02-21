@@ -10,7 +10,7 @@ hr{
     margin-bottom: 10vh;
 }
 
-h6{
+h2{
     text-align: center;
     font-weight: lighter;
     font-size: 1.3rem;
@@ -62,29 +62,12 @@ a{
 
 @media only screen and (max-device-width: 320px){
 
-    h6{
+    h2{
         font-size: 1.15rem;
         padding: 0 5vh 0 5vh;
     }
 
     .card:active{
         width: 450px;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width:375px) {
-
-    h1{
-        font-size: 2rem;
-    }
-
-    h6{
-        padding: 0 5vh 0 5vh;
-    }
-}
-
-@media screen and (min-width: 375px) and (max-width:425px) {
-    h6{
-        padding: 0 5vh 0 5vh;
     }
 }
