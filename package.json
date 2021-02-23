@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && rm -rf ./dist/*-gzip && gzipper compress --verbose --output-file-format [filename].[ext] ./dist/CV-angular ./dist/CV-angular-gzip",
+    "build": "ng build",
+    "gzip": "rm -rf ./dist/*-gzip && gzipper compress --verbose --output-file-format [filename].[ext] ./dist/CV-angular ./dist/CV-angular-gzip",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
