@@ -10,11 +10,14 @@
         <small>({{project.finishDate | date: "y"}})</small>
     </h1>
     <hr/>
-    
     <h2>{{project.description}}</h2>
-    
+        <div class="row d-flex justify-content-around py-5 m-4"  style="cursor: pointer;">
+            <div *ngFor="let technologie of project.technologies;" class="mx-4">
+                <span class="badge bg-warning text-dark" >{{technologie}}</span>
+            </div>
+        </div>
     <div class="row">
-        <div class="col-sm-4" *ngFor="let img of project.imgs;">
+        <div class="col-sm-4" *ngFor="let img of project.imgs;" style="cursor: pointer;">
             <div class="card">
                 <img [src]="img"  alt="app development image">
              </div>
@@ -23,7 +26,7 @@
     
     <div id="button">
         <a [routerLink]="['/project']" class="btn" class="btn btn-outline-warning btn-block">
-            Navigate Back
+            Volver atrás
         </a>
     </div>
     

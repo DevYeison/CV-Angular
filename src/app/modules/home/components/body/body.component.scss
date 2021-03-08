@@ -18,6 +18,10 @@ h1{
     font-weight: bold;
 }
 
+#image-id{
+       border-radius: 25px;
+    }
+
 .about{
     padding-left: 4vh;
 }
@@ -108,5 +112,28 @@ hr{
 
     h2{
         padding: 2.7rem 0.2rem 0rem 0.3rem;
+    }
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 575px) {
+    #image-id{
+       border-radius: 25px;
+       width: 50%;
+       margin-left: 20vh;
+    }
+    #image{
+        margin-left: 10vh;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-device-width : 450px){
+    #image{
+        margin-left: 30px;
+    }
+    #image-id{
+       margin-left: 5vh;
+       width: 80%;
     }
 }
