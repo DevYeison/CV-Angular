@@ -9,21 +9,23 @@ import { ProjectComponent } from './components/project/project.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    NavbarComponent, 
-    CarouselComponent, 
-    BodyComponent, 
-    ProjectComponent, 
+    NavbarComponent,
+    CarouselComponent,
+    BodyComponent,
+    ProjectComponent,
     ProjectsComponent,
     FooterComponent
-    ],
+  ],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    CarouselModule.forRoot()
   ]
 })
 export class HomeModule { }

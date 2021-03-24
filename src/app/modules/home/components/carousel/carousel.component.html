@@ -1,24 +1,15 @@
-<section>
-  <img 
-  srcset="
-          https://i.ibb.co/r57PmXt/bg-320w.png 320w,
-          https://i.ibb.co/VgtP855/bg-375w.png 375w,
-          https://i.ibb.co/pvCKTdV/bg-425w.png 425w,
-          https://i.ibb.co/rdYJp4G/bg-768w.png 768w,
-          https://i.ibb.co/1sq3pNT/bg-1040w.png 1024w,
-          https://i.ibb.co/PFJdqRB/bg-1440w.png 1440w,
-          https://i.ibb.co/RCX5Y5w/bg-2560w.png2560w"
-    sizes="(max-width: 320px) 320px,
-           (max-width: 375px) 375px,
-           (max-width: 425px) 425px,
-           (max-width: 768px) 768px,
-           (max-width: 1024px) 1024px,
-           (max-width: 1440px) 1440px,
-           (max-width: 2560px) 2560px,
-           1024px"
-    src="https://i.ibb.co/R2fzCjV/bg-1024w.png"
-    alt="background developer image">
-</section>
+<div id="title">
+       <h1> Full-Stack Developer </h1>
+</div>
 
-
-
+<carousel [isAnimated]="true">
+       <slide>
+              <img src="assets/imgs/carousel-1.webp" alt="Screenshot css code">
+       </slide>
+       <slide>
+              <img src="assets/imgs/carousel-2.webp" alt="Binaries image">
+       </slide>
+       <slide>
+              <img src="assets/imgs/carousel-3.webp" alt="Developer sentence image">
+       </slide>
+</carousel>

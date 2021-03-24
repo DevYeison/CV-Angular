@@ -117,14 +117,10 @@ hr{
 
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 575px) {
-    #image-id{
-       border-radius: 25px;
-       width: 50%;
-       margin-left: 20vh;
-    }
+
     #image{
-        margin-left: 10vh;
-        width: 80%;
+        padding-left: 10vh;
+        width: 70%;
     }
 }
 
@@ -133,7 +129,7 @@ hr{
         margin-left: 30px;
     }
     #image-id{
-       margin-left: 5vh;
+       margin-left: 3vh;
        width: 80%;
     }
 }
