@@ -7,7 +7,7 @@ import { CarouselConfig } from 'ngx-bootstrap/carousel';
   styleUrls: ['./carousel.component.scss'],
   providers: [
     {
-      provide: CarouselConfig, useValue: { interval: 4000, noPause: true, showIndicators: true, pauseOnFocus: true}
+      provide: CarouselConfig, useValue: { interval: 4000, showIndicators: true}
     }
   ]
 })
