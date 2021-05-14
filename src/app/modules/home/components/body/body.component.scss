@@ -1,135 +1,118 @@
 $black-color: #000000;
-$white-color: #F6FEF4;
+$white-color: #f6fef4;
 
-h1{
-    font-weight: bold;
+h1 {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 1.3em;
+  color: $black-color;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+#image-id {
+  border-radius: 25px;
+  width: 200px;
+}
+
+.about {
+  padding-left: 4vh;
+}
+
+.profile {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 0.2rem;
+  padding-top: 2rem;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.6rem;
+}
+
+.description {
+  font-size: 1rem;
+  text-justify: distribute;
+}
+
+.padding {
+  padding-right: 7vh;
+}
+
+.div-quote {
+  padding-top: 15vh;
+}
+
+.quote {
+  font-size: 1.2rem;
+}
+
+.list {
+  padding-top: 5vh;
+}
+
+li {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.progress {
+  height: 1.3rem;
+}
+
+.progress-bar {
+  color: $white-color;
+  font-weight: bolder;
+  font-size: 0.75rem;
+}
+
+hr {
+  margin-top: 15vh;
+  color: gray;
+  width: 90%;
+}
+
+@media only screen and (max-device-width: 320px) {
+  #about {
+    font-size: 1.6rem;
     text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 1.3em;
-    color: $black-color;
-}
+  }
 
-.card-img-top{
-    padding-left: 2vh;
-}
-.card-text{
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: bold;
-}
+  .col-sm-3 {
+    padding-left: 0.6rem;
+    padding-right: 6vh;
+    padding-bottom: 5vh;
+  }
 
-#image-id{
-       border-radius: 25px;
-    }
-
-.about{
-    padding-left: 4vh;
-}
-
-.profile{
-    font-size: 1.3rem;
-    font-weight: bold;
-    padding-bottom: 0.2rem;
-    padding-top: 2rem;
-    text-align: center;
-}
-h2{
-    text-align: center;
-    font-size: 1.2rem;
-    padding-top: 1rem;
-    padding-bottom: 0.6rem;
-}
-
-.description{
-    font-size: 1rem;
-    text-justify: distribute;
-}
-
-.padding{
-    padding-right: 7vh;
-}
-
-.div-quote{
-    padding-top: 15vh;
-}
-
-.quote{
-    font-size: 1.2rem;
-}
-
-.list{
+  .div-quote {
     padding-top: 5vh;
-}
+  }
 
-li{
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.progress{
-    height: 1.3rem;
-}
-
-.progress-bar{
-    color: $white-color;
-    font-weight: bolder;
-    font-size: 0.75rem;
-}
-
-hr{
-    margin-top: 15vh;
+  hr {
+    margin-top: 10vh;
     color: gray;
-    width: 90%;
+    width: 70%;
+  }
+
+  h1 {
+    padding-bottom: 0.5rem;
+  }
+
+  h2 {
+    padding: 2.7rem 0.2rem 0rem 0.3rem;
+  }
 }
 
-
-@media only screen and (max-device-width: 320px ){
- 
-    #about{
-        font-size: 1.6rem;
-        text-align: center;
-    }
-
-    .col-sm-3{
-        padding-left: 0.6rem;
-        padding-right: 6vh;
-        padding-bottom: 5vh;
-    }
-
-    .div-quote{
-        padding-top: 5vh;
-    }
-
-    hr{
-        margin-top: 10vh;
-        color: gray;
-        width: 70%;
-    }
-    
-    h1{
-        padding-bottom: 0.5rem;
-    }
-
-    h2{
-        padding: 2.7rem 0.2rem 0rem 0.3rem;
-    }
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 575px) {
 }
 
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 575px) {
-
-    #image{
-        padding-left: 10vh;
-        width: 70%;
-    }
-}
-
-@media only screen and (max-device-width : 450px){
-    #image{
-        margin-left: 30px;
-    }
-    #image-id{
-       margin-left: 3vh;
-       width: 80%;
-    }
-}
+@media only screen and (max-device-width: 450px) {
+} */
