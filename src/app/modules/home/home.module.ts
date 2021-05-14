@@ -3,19 +3,18 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { CarouselComponent } from './components/carousel/carousel.component';
+import { GradientBackgroundComponent } from './components/background/background.component';
 import { BodyComponent } from './components/body/body.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
     HomeComponent,
     NavbarComponent,
-    CarouselComponent,
+    GradientBackgroundComponent,
     BodyComponent,
     ProjectComponent,
     ProjectsComponent,
@@ -24,8 +23,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    FontAwesomeModule,
-    CarouselModule.forRoot()
+    FontAwesomeModule
   ]
 })
 export class HomeModule { }
