@@ -1,34 +1,55 @@
 <div id="alert">
-    <div #alert *ngIf="!loading" class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>Loading... </strong>{{error}}
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close button" (mousedown)="closeAlert()" (touchstart)="closeAlert()"></button>
-      </div>
+  <div
+    #alert
+    *ngIf="!loading"
+    class="alert alert-warning alert-dismissible fade show"
+    role="alert"
+  >
+    <strong>Loading... </strong>{{ error }}
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="alert"
+      aria-label="Close button"
+      (mousedown)="closeAlert()"
+      (touchstart)="closeAlert()"
+    ></button>
+  </div>
 </div>
 
 <div id="projects" onload="window.scroll(0,0)">
-    <h1>{{project.name | uppercase}} 
-        <small>({{project.finishDate | date: "y"}})</small>
-    </h1>
-    <hr/>
-    <h2>{{project.description}}</h2>
-        <div class="row d-flex justify-content-around py-5 m-4"  style="cursor: pointer;">
-            <div *ngFor="let technologie of project.technologies;" class="mx-4">
-                <span class="badge bg-warning text-dark" >{{technologie}}</span>
-            </div>
-        </div>
-    <div class="row">
-        <div class="col-sm-4" *ngFor="let img of project.imgs;" style="cursor: pointer;">
-            <div class="card">
-                <img [src]="img"  alt="app development image">
-             </div>
-        </div>
+  <h1>
+    {{ project.name | uppercase }}
+    <small>({{ project.finishDate | date: "y" }})</small>
+  </h1>
+  <hr />
+  <h2>{{ project.description }}</h2>
+  <div class="row list-tech">
+    <div class="col-1" *ngFor="let technologie of project.technologies">
+      <span class="badge bg-warning text-dark px-3 py-2">{{ technologie }}</span>
     </div>
-    
-    <div id="button">
-        <a [routerLink]="['/project']" class="btn" class="btn btn-outline-warning btn-block">
-            Volver atrás
-        </a>
+  </div>
+  <div class="row">
+    <div
+      class="col-sm-4"
+      *ngFor="let img of project.imgs"
+      style="cursor: pointer"
+    >
+      <div class="card">
+        <img [src]="img" alt="app development image" />
+      </div>
     </div>
-    
-    <project-footer></project-footer>
+  </div>
+
+  <div id="button">
+    <a
+      [routerLink]="['/project']"
+      class="btn"
+      class="btn btn-outline-warning btn-block"
+    >
+      Volver atrás
+    </a>
+  </div>
+
+  <project-footer></project-footer>
 </div>
