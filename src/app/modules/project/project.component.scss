@@ -28,14 +28,7 @@ h2{
 .col-sm-4{
     padding: 5vh 5vh 5vh 5vh;
 }
-.card:active{
-    position: relative;
-    left: 90%;
-    top: 50%;
-    transform: translate(-68%,-70%);
-    width: 500px;
-    z-index: 2;
-}
+
 #button{
    width: 100%;
    text-align: center;
@@ -63,9 +56,23 @@ a{
 .list-tech{
     display: flex;
     justify-content: center;
-    margin: 100px 0;
+    margin: 100px 10px;
 }
 
+.card{
+    box-shadow:
+    0 2.4px 2.1px rgba(0, 0, 0, 0.034),
+    0 6.35px 5.15px rgba(0, 0, 0, 0.048),
+    0 11.5px 9px rgba(0, 0, 0, 0.06),
+    0 20px 15.6px rgba(0, 0, 0, 0.072),
+    0 40px 32px rgba(0, 0, 0, 0.086),
+    0 80px 60px rgba(0, 0, 0, 0.12);
+
+}
+.card:hover{
+    transform: scale(1.04);
+    transition-duration: 0.3s;
+}
 @media only screen and (max-device-width: 320px){
 
     h2{
@@ -73,7 +80,13 @@ a{
         padding: 0 5vh 0 5vh;
     }
 
-    .card:active{
-        width: 450px;
+    .list-tech{
+        display: none;
     }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px){
+    .list-tech{
+        display: none;
+    }
+}   
