@@ -50,7 +50,7 @@ export class ProjectComponent implements OnInit {
     _ligthboxConfig.disableScrolling = true;
     _ligthboxConfig.centerVertically = true;
     _ligthboxConfig.wrapAround = true;
-    _ligthboxConfig.resizeDuration = 0.3;
+    _ligthboxConfig.resizeDuration = 0.15;
   }
 
   ngOnInit(): void {
