@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  BASE_API_URL: "http://localhost:3001/v1/api/"
+  BASE_API_URL: "https://yeisoncv.herokuapp.com/v1/api/"
 };
 
 /*
