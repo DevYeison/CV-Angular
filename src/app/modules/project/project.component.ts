@@ -16,11 +16,11 @@ export class ProjectComponent implements OnInit {
   public error: string = "";
   @ViewChild('alert') private alertElement: ElementRef;
 
-  private _album: Array<{ src: string, thumb: string }> = [];
+  public _album: Array<{ src: string, thumb: string }> = [];
 
   constructor(
     private _activatedRoute: ActivatedRoute,
-    private _projectService: ProjectService, 
+    private _projectService: ProjectService,
     private _ligthbox: Lightbox,
     private _ligthboxConfig: LightboxConfig) {
     if (this.deviceWidth <= 320) {
@@ -46,7 +46,7 @@ export class ProjectComponent implements OnInit {
       technologies: ["loading..."],
       imgs: ['https://zonegis.es/wp-content/uploads/2020/05/Loading.jpg']
     }
-  
+
     _ligthboxConfig.disableScrolling = true;
     _ligthboxConfig.centerVertically = true;
     _ligthboxConfig.wrapAround = true;
