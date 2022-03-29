@@ -1,5 +1,5 @@
 [build]
-  publish = "dist/CV-angular"
+  publish = "CV-angular"
   command = "npm run build"
 [[redirects]]
   from = "/*"
